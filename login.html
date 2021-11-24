@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login | Play Centre</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="fontawesome-free-5.13.0-web/css/all.min.css">
+	<style type="text/css">
+		body {
+			overflow: hidden;
+			background-color: #000;
+		}
+		.btn-yellow {
+			background-color: #f4d144;
+			color: #000;
+		}
+		a {
+			color: #f4d144;
+		}
+		a:hover {
+			color: #f4d144;
+			text-decoration: none;
+			font-weight: bold;
+		}
+		input {
+			font-size: 20px !important;
+		}
+	</style>
+</head>
+<body>
+	<div id="main">
+		<div class="container">
+			<div class="text-center mt-5 pb-5">
+				<h1 class="text-light">PLAYCENTER</h1>
+			</div>
+			<div class="text-center mt-5">
+				<form class="form" action="#">
+					<div class="form-group mt-5 pb-3">
+						<input type="text" class="form-control" placeholder="username" required>
+					</div>
+					<div class="form-group">
+						<input type="password" class="form-control" placeholder="password" required>
+					</div>
+					<div class="form-group mt-5">
+						<a href="#"><small>Don't have an account? Sign up</small></a>
+					</div>
+					<div class="form-group">
+						<button class="btn btn-lg btn-block btn-yellow" id="gotoIndex"><h4 class="mt-1">Login</h4></button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="fontawesome-free-5.13.0-web/js/all.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#gotoIndex").on('click', function(){
+				window.location = 'index.html';
+			});
+		});
+	</script>
+</body>
+</html>
