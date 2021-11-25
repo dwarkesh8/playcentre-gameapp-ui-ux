@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Login | Play Centre</title>
+	<title>Login | Play Zone</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="fontawesome-free-5.13.0-web/css/all.min.css">
 	<style type="text/css">
@@ -26,27 +26,47 @@
 		input {
 			font-size: 20px !important;
 		}
+		.input-bg-dark {
+			background-color: #1f2430;
+			border-color: #1f2430;
+		}
+		.input-bg-dark:focus {
+			background-color: #1f2430;
+			border-color: #f4d144;
+			color: #fff;
+		}
+		.border-radius-11 {
+			border-radius: 11px;
+		}
+		hr {
+			border: 2px solid #1f2430;
+			border-radius: 5px;
+			width: 84px;
+		}
 	</style>
 </head>
 <body>
 	<div id="main">
 		<div class="container">
-			<div class="text-center mt-5 pb-5">
-				<h1 class="text-light">PLAYCENTER</h1>
+			<div class="text-center mt-5 pb-2">
+				<h3 class="text-light">Login Now</h3>
+				<p class="text-light">Welcome back to PlayZone! Enter your email <br>address and your password to enjoy the latest Features of PlayZone</p>
 			</div>
 			<div class="text-center mt-5">
 				<form class="form" action="#">
 					<div class="form-group mt-5 pb-3">
-						<input type="text" class="form-control" placeholder="username" required>
+						<input type="text" class="form-control input-bg-dark" placeholder="username" required>
 					</div>
 					<div class="form-group">
-						<input type="password" class="form-control" placeholder="password" required>
+						<input type="password" class="form-control input-bg-dark" placeholder="password" required>
+						<a href="#"class="float-right mt-1 pb-5"><small>Forgot password</small></a>
 					</div>
-					<div class="form-group mt-5">
-						<a href="#"><small>Don't have an account? Sign up</small></a>
+					<div class="form-group pb-5">
+						<button class="btn btn-lg btn-block btn-yellow border-radius-11" id="gotoIndex"><h5 class="mt-1">Login Now</h5></button>
 					</div>
-					<div class="form-group">
-						<button class="btn btn-lg btn-block btn-yellow" id="gotoIndex"><h4 class="mt-1">Login</h4></button>
+					<div class="form-group mt-3">
+						<a href="signup.html"><small><span class="text-dark"> Don't have an account?</span> <span class="text-yellow">Create one</span></small></a>
+						<center><hr/></center>
 					</div>
 				</form>
 			</div>
