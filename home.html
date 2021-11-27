@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home | Play Zone</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="fontawesome-free-5.13.0-web/css/all.min.css">
+	<style type="text/css">
+		body {
+			/*overflow: hidden;*/
+			background-color: #000;
+			padding: 0;
+			margin: 0;
+		}
+		.btn-yellow {
+			background-color: #f4d144;
+			color: #000;
+		}
+		a {
+			color: #f4d144;
+		}
+		a:hover {
+			color: #f4d144;
+			text-decoration: none;
+			font-weight: bold;
+		}
+		input {
+			font-size: 20px !important;
+		}
+		.input-bg-dark {
+			background-color: #1f2430;
+			border-color: #1f2430;
+		}
+		.input-bg-dark:focus {
+			background-color: #1f2430;
+			border-color: #f4d144;
+			color: #fff;
+		}
+		.border-radius-11 {
+			border-radius: 11px;
+		}
+		hr {
+			border: 1px solid #1f2430;
+			border-radius: 5px;
+			width: 64px;
+		}
+		.hr2 {
+			border: 1px solid #1f2430;
+			width: 100%;
+		}
+		.text-dark-grey {
+			color: #656871;
+		}
+		.border-50 {
+			border-radius: 50px;
+		}
+		.bg-dark-grey {
+			background-color: #121724;
+		}
+		.font-size-40 {
+			font-size: 40px;
+		}
+		.font-size-10 {
+			font-size: 10px;
+		}
+		.dot {
+			height: 61px;
+			width: 61px;
+			background-color: #bbb;
+			border-radius: 50%;
+			display: inline-block;
+		}
+		.dot2 {
+			height: 71px;
+			width: 71px;
+			background-color: #bbb;
+			border-radius: 50%;
+			display: inline-block;
+		}
+		.dot3 {
+			height: 20px;
+			width: 20px;
+			background-color: #bbb;
+			border-radius: 50%;
+			display: inline-block;
+		}
+		label {
+			color: #5f646c;
+		}
+		.div-points {
+			height: 150px;
+			width: 95px;
+			border-radius: 12%;
+			border: 1px solid #8c8e93;
+		}
+		.div-grey-blank {
+			height: 150px;
+			width: 225px;
+			border-radius: 12%;
+			background-color: #8c8e93;
+		}
+		.div-popular-games {
+			height: 150px;
+			width: 225px;
+			border-radius: 12%;
+			background-color: #1f2430;
+		}
+		.div-inner {
+			height: 88px;
+			width: 216px;
+			border-radius: 10%;
+			/*background-color: #d8d8d8;*/
+			background: rgb(2,0,36);
+			background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(216,216,216,1) 60%); 
+		}
+		.line-height-14 {
+			line-height: 14px;
+		}
+		.fa-square {
+			font-size: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div id="main">
+		<div class="container">
+			<div class="row">
+				<div class="container">
+					<div class="mt-4">
+						<div class="float-left ml-2 dot"></div>
+						<h5 class="float-left text-light ml-2 mt-3">Erlink Halah</h5>
+						<p class="float-right text-dark-grey mr-2 bg-dark-grey border-50"><span class="fa fa-bell p-2 font-size-40"></span></p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="container">
+					<div class="mt-2 pb-2">
+						<div class="text-center float-left mt-2 ml-2 div-points">
+							<small class="text-muted">Points <br> <span class="text-light">2,7k</span></small>
+							<hr>
+							<small class="text-muted">Games played <br> <span class="text-light">2,7k</span></small>
+						</div>
+						<div class="float-right mt-2 div-grey-blank"></div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="container">
+					<br>
+					<div class="d-flex">
+						<div class="dot2 text-center p-2"><span class="fa fa-dice font-size-40 text-light"></span></div>&nbsp;&nbsp;&nbsp;
+						<div class="dot2 text-center p-3"><span class="fa fa-cut font-size-40 text-dark"></span></div>&nbsp;&nbsp;&nbsp;
+						<div class="dot2 text-center p-2"><span class="fas fa-table-tennis font-size-40 text-danger"></span></div>&nbsp;&nbsp;&nbsp;
+						<div class="dot2 text-center p-2"><span class="fas fa-khanda font-size-40 text-primary"></span></div>&nbsp;&nbsp;&nbsp;
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="container">
+					<!-- <br> -->
+					<p class="text-light float-left">Popular <b>Games</b></p>
+					<p class="text-light float-right">Show all</p>
+				</div>
+				<div class="container">
+					<div class="overflow-auto">
+						<div class="table-responsive table-borderless">
+							<table class="table">
+								<tr>
+									<td>
+										<div class="div-popular-games p-1">
+											<div class="div-inner">
+												<div class="d-flex">
+													<div class="dot3 ml-1 mt-1"></div><span class="text-light ml-1 mb-2">Dana Blu</span>
+												</div>
+											</div>
+											<div class="line-height-14">
+												<small class="text-light">Overwatch <br>Championship</small>
+											</div>
+											<small class="fa fa-square text-dark-grey"></small>&nbsp;<small class="text-dark-grey">overwatch league 2021</small>
+										</div>
+									</td>
+									<td>
+										<div class="div-popular-games p-1">
+											<div class="div-popular-games p-1">
+												<div class="div-inner">
+													<div class="d-flex">
+														<div class="dot3 ml-1 mt-1"></div><span class="text-light ml-1 mb-2">Dana Blu</span>
+													</div>
+												</div>
+												<div class="line-height-14">
+													<small class="text-light">Age of Empires || <br>World cup</small>
+												</div>
+												<small class="fa fa-square text-dark-grey"></small>&nbsp;<small class="text-dark-grey">overwatch league 2021</small>
+											</div>
+										</div>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+				<hr class="hr2">
+				<div class="container">
+					<span class="fa fa-reply font-size-40 text-dark-grey"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="fontawesome-free-5.13.0-web/js/all.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.fa-reply').on('click',function(){
+				window.location = 'my-profile.html';
+			});
+		});
+	</script>
+</body>
+</html>
