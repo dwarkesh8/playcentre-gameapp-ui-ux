@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>All Games | Play Zone</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="fontawesome-free-5.13.0-web/css/all.min.css">
+	<style type="text/css">
+		body {
+			overflow: hidden;
+			background-color: #000;
+		}
+		.btn-yellow {
+			background-color: #f4d144;
+			color: #000;
+		}
+		a {
+			color: #f4d144;
+		}
+		a:hover {
+			color: #f4d144;
+			text-decoration: none;
+			font-weight: bold;
+		}
+		input {
+			font-size: 20px !important;
+		}
+		.input-bg-dark {
+			background-color: #1f2430;
+			border-color: #1f2430;
+		}
+		.input-bg-dark:focus {
+			background-color: #1f2430;
+			border-color: #f4d144;
+			color: #fff;
+		}
+		.border-radius-11 {
+			border-radius: 11px;
+		}
+		hr {
+			border: 2px solid #1f2430;
+			border-radius: 5px;
+			width: 84px;
+		}
+		.text-dark-grey {
+			color: #656871;
+		}
+		.border-50 {
+			border-radius: 50px;
+		}
+		.bg-dark-grey {
+			background-color: #121724;
+		}
+		.font-size-45 {
+			font-size: 45px;
+		}
+		.font-size-10 {
+			font-size: 10px;
+		}
+		.font-size-25 {
+			font-size: 25px;
+		}
+		.dot {
+			height: 61px;
+			width: 61px;
+			background-color: #bbb;
+			border-radius: 50%;
+			display: inline-block;
+		}
+		label {
+			color: #5f646c;
+		}
+		.notification {
+			min-height: 150px;
+			border-radius: 20px;
+			background-color: #d8d8d8;
+			margin: 0 !important;
+			padding: 0 !important;
+		}
+		.notification-top {
+			min-height: 99px;
+			border-radius: 20px;
+		}
+		.notification-bottom {
+			font-size: 14px;
+			bottom: 0px;
+			border-bottom-right-radius: 20px;
+			border-bottom-left-radius: 20px;
+			background-color: #1f2430;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<div id="main">
+		<div class="container">
+			<div class="row">
+				<div class="container">
+					<div class="mt-5 pb-2">
+						<p class="float-left text-dark-grey mr-2 bg-dark-grey border-50" id="gotoHome"><span class="fa fa-arrow-left p-2 font-size-45"></span></p>
+						<p class="text-center font-size-25 text-light">All Games</p>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="notification">
+					<div class="notification-top"></div>
+					<div class="notification-bottom p-3">
+						Dota Pro Circuit 2021: S1 <br> - China Upper Division
+					</div>
+				</div>
+				<br>
+				<div class="notification">
+					<div class="notification-top"></div>
+					<div class="notification-bottom p-3">
+						Dota Pro Circuit 2021: S1 <br> - China Upper Division
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="fontawesome-free-5.13.0-web/js/all.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#gotoHome').on('click',function(){
+				window.location = 'home.html';
+			});
+		});
+	</script>
+</body>
+</html>
