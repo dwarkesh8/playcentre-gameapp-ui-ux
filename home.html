@@ -72,11 +72,8 @@
 			display: inline-block;
 		}
 		.dot2 {
-			height: 71px;
-			width: 71px;
-			background-color: #bbb;
+			background-color: #1f2430;
 			border-radius: 50%;
-			display: inline-block;
 		}
 		.dot3 {
 			height: 20px;
@@ -120,6 +117,9 @@
 		.fa-square {
 			font-size: 10px;
 		}
+		img {
+			max-width: 75px;
+		}
 	</style>
 </head>
 <body>
@@ -130,7 +130,7 @@
 					<div class="mt-4">
 						<div class="float-left ml-2 dot"></div>
 						<h5 class="float-left text-light ml-2 mt-3">Erlink Halah</h5>
-						<p class="float-right text-dark-grey mr-2 bg-dark-grey border-50"><span class="fa fa-bell p-2 font-size-40"></span></p>
+						<p class="float-right text-dark-grey mr-2 bg-dark-grey border-50" id="gotoNotifications"><span class="fa fa-bell p-2 font-size-40"></span></p>
 					</div>
 				</div>
 			</div>
@@ -142,28 +142,37 @@
 							<hr>
 							<small class="text-muted">Games played <br> <span class="text-light">2,7k</span></small>
 						</div>
-						<div class="float-right mt-2 div-grey-blank"></div>
+						<div class="float-right mt-2 ml-2 div-grey-blank"></div>
 					</div>
 				</div>
 			</div>
+			<br>
 			<div class="row">
 				<div class="container">
 					<br>
-					<div class="d-flex">
-						<div class="dot2 text-center p-2"><span class="fa fa-dice font-size-40 text-light"></span></div>&nbsp;&nbsp;&nbsp;
+					<table>
+						<tr>
+							<td class="dot2 text-center p-1">
+								<img src="img/Book of Knowledge.png">		
+							</td>
+						</tr>
+					</table>
+					<!-- <div class="d-flex">
+						<div class="dot2 text-center p-2"><img src="img/Book of Knowledge.png"></div>&nbsp;&nbsp;&nbsp;
 						<div class="dot2 text-center p-3"><span class="fa fa-cut font-size-40 text-dark"></span></div>&nbsp;&nbsp;&nbsp;
 						<div class="dot2 text-center p-2"><span class="fas fa-table-tennis font-size-40 text-danger"></span></div>&nbsp;&nbsp;&nbsp;
 						<div class="dot2 text-center p-2"><span class="fas fa-khanda font-size-40 text-primary"></span></div>&nbsp;&nbsp;&nbsp;
-					</div>
+					</div> -->
 				</div>
 			</div>
 		</div>
+		<br>
 		<div class="container">
 			<div class="row">
 				<div class="container">
 					<!-- <br> -->
 					<p class="text-light float-left">Popular <b>Games</b></p>
-					<p class="text-light float-right">Show all</p>
+					<p class="text-light float-right" id="gotoAllGames">Show all</p>
 				</div>
 				<div class="container">
 					<div class="overflow-auto">
@@ -203,10 +212,6 @@
 						</div>
 					</div>
 				</div>
-				<hr class="hr2">
-				<div class="container">
-					<span class="fa fa-reply font-size-40 text-dark-grey"></span>
-				</div>
 			</div>
 		</div>
 	</div>
@@ -215,8 +220,11 @@
 	<script type="text/javascript" src="fontawesome-free-5.13.0-web/js/all.min.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
-			$('.fa-reply').on('click',function(){
-				window.location = 'my-profile.html';
+			$('#gotoNotifications').on('click',function(){
+				window.location = 'notifications.html';
+			});
+			$('#gotoAllGames').on('click',function(){
+				window.location = 'all-games.html';
 			});
 		});
 	</script>
